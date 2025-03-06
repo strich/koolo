@@ -6,7 +6,7 @@ if exist build rmdir /s /q build > NUL || goto :error
 
 echo Building Koolo binary...
 if "%1"=="" (set VERSION=dev) else (set VERSION=%1)
-go build -trimpath -tags static --ldflags -extldflags="-static" -ldflags="-s -w -H windowsgui -X 'github.com/hectorgimenez/koolo/internal/config.Version=%VERSION%'" -o build/koolo.exe ./cmd/koolo > NUL || goto :error
+go build -trimpath -tags static --ldflags -extldflags="-static" -ldflags="-s -w -H windowsgui -X 'github.com/hectorgimenez/koolo/internal/config.Version=%VERSION%'" -o build/d2run.exe ./cmd/koolo > NUL || goto :error
 
 echo Copying assets...
 mkdir build\config > NUL || goto :error
