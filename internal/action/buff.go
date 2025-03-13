@@ -132,6 +132,9 @@ func IsRebuffRequired() bool {
 			if buff == skill.CycloneArmor && !ctx.Data.PlayerUnit.States.HasState(state.Cyclonearmor) {
 				return true
 			}
+			if buff == skill.BattleCommand && !ctx.Data.PlayerUnit.States.HasState(state.Battlecommand) {
+				return true
+			}
 		}
 	}
 

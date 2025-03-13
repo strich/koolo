@@ -110,6 +110,10 @@ type CharacterCfg struct {
 		StashToShared bool   `yaml:"stashToShared"`
 		UseTeleport   bool   `yaml:"useTeleport"`
 		ClearPathDist int    `yaml:"clearPathDist"`
+		SingerBarb    struct {
+			FindItemSwitch              bool `yaml:"find_item_switch"`
+			SkipPotionPickupInTravincal bool `yaml:"skip_potion_pickup_in_travincal"`
+		} `yaml:"singer_barb"`
 		BerserkerBarb struct {
 			FindItemSwitch              bool `yaml:"find_item_switch"`
 			SkipPotionPickupInTravincal bool `yaml:"skip_potion_pickup_in_travincal"`

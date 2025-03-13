@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
         noSettingsMessage.style.display = 'none';
         
         // Show relevant options based on class
-        if (selectedClass === 'berserker') {
+        if (selectedClass === 'berserker' || selectedClass === 'singerbarb') {
             berserkerBarbOptions.style.display = 'block';
         } else if (selectedClass === 'nova' || selectedClass === 'lightsorc') {
             novaSorceressOptions.style.display = 'block';
